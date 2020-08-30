@@ -29,7 +29,7 @@ public class LineCommandTest extends BaseTest{
     @FileParameters(createLineParamUrl)
     public void executeTest(String createCanvasArgument, String lineArgument, String expected) throws Exception {
         /** In this test, we only use valid input arguments
-         *  as invalid argument should be handle by the validateFormatTest method **/
+         *  as invalid argument should be tested by the validateFormatTest method **/
 
         if (!createCanvasArgument.equals("")) {
             createCommand.setArgumentsArr(createCanvasArgument);

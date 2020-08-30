@@ -31,7 +31,7 @@ public class CreateCommandTest extends BaseTest {
     @FileParameters(createCanvasParamUrl)
     public void executeTest(String argument, String expected) throws Exception {
         /** In this test, we only use valid input arguments
-         *  as invalid argument should be handle by the validateFormatTest method **/
+         *  as invalid argument should be tested by the validateFormatTest method **/
         createCommand.setArgumentsArr(argument);
         createCommand.execute();
         String unescapedExpected = StringEscapeUtils.unescapeJava(expected);

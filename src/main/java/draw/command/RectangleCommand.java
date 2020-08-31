@@ -12,8 +12,7 @@ public class RectangleCommand extends Command implements GenericAdaptor {
 
     private static final String wrongInputFormatMsg =
             "Incorrect syntax or format\n" +
-            "use \"R x1 y1 x2 y2\" where x1, y1, x2, y2 should be positive" +
-            "whose upper left corner is (x1,y1) and lower right corner is (x2,y2)";
+            "use \"R x1 y1 x2 y2\" where x1, y1, x2, y2 should be positive whose upper left corner is (x1,y1) and lower right corner is (x2,y2)";
 
     @Override
     public boolean validateFormat() {

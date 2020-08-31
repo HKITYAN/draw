@@ -5,10 +5,7 @@ import draw.command.Command;
 import org.reflections.Reflections;
 import org.reflections.util.ClasspathHelper;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 
 public class CmdContainer {
     public static final Map<String, Command> cmdMap = new HashMap();
@@ -29,7 +26,9 @@ public class CmdContainer {
     public static Command getCommand(String mainCommand, String arguments) throws Exception {
         Optional<Command> optionalCommand = Optional.ofNullable(cmdMap.get(mainCommand));
         if (!optionalCommand.isPresent()) {
-            throw new Exception("No such command, available commands: " + cmdMap.keySet());
+            Object[] availableCommands = cmdMap.keySet().toArray();
+            Arrays.sort(availableCommands);
+            throw new Exception("No such command, available commands: " + Arrays.toString(availableCommands));
         };
         Command command = optionalCommand.get();
         command.setArgumentsArr(arguments);

@@ -21,7 +21,7 @@ public class Rectangle extends DrawingTool {
     private char lineStyle = 'x';
 
     @Override
-    protected void updateCanvas() throws Exception {
+    public void updateCanvas() throws Exception {
         Canvas canvas = Canvas.getActiveCanvas();
 
         int canvasWidth = canvas.getWidth();

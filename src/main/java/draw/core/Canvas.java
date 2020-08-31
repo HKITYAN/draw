@@ -39,6 +39,11 @@ public class Canvas {
         System.out.println(canvas.content);
     }
 
+    public static void clear() {
+        activeCanvas = null;
+        canvasRepo.clear();
+    }
+
     private Canvas(int width, int height) {
         this.width = width;
         this.height = height;

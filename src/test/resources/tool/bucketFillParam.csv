@@ -1,0 +1,3 @@
+10 10,L,1 3 1 5,2 5 c,------------\n\|cccccccccc\|\n\|cccccccccc\|\n\|xccccccccc\|\n\|xccccccccc\|\n\|xccccccccc\|\n\|cccccccccc\|\n\|cccccccccc\|\n\|cccccccccc\|\n\|cccccccccc\|\n\|cccccccccc\|\n------------
+5 4,R,1 2 3 4,2 3 +,-------\n\|     \|\n\|xxx  \|\n\|x+x  \|\n\|xxx  \|\n-------
+3 3,,,4 5 @,Cannot fill outside the canvas\, please fill in another position

@@ -11,8 +11,7 @@ public class LineCommand extends Command implements GenericAdaptor {
 
     private static final String wrongInputFormatMsg =
             "Incorrect syntax or format\n" +
-            "use \"L x1 y1 x2 y2\" where x1, y1, x2, y2 should be positive" +
-            "and line should be horizontal or vertical (x1 = x2 or y1 = y2)";
+            "use \"L x1 y1 x2 y2\" where x1, y1, x2, y2 should be positive and line should be horizontal or vertical (x1 = x2 or y1 = y2)";
 
     @Override
     public boolean validateFormat() {

@@ -7,9 +7,9 @@ public abstract class DrawingTool {
 
     public void draw() throws Exception {
         Canvas canvas = Canvas.getActiveCanvas();
+        System.out.println(canvas);
         if (canvas == null) {
-            System.out.println("Please create canvas first");
-            return;
+            throw new Exception("Please create canvas first");
         }
         updateCanvas();
         System.out.println(canvas.getContent());

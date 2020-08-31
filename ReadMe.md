@@ -4,6 +4,8 @@
 * first have all the maven dependencies installed
 * then run the maim method in App.java class `draw.App`
 * you will see enter command in the console and you can start using it.
+* you can also run the `final.jar` in the root directory using `java -jar final.jar`
+* to rebuild the app, use `mvn clean install`, `final.jar` will be created in target folder
 
 ## Some Reminders
 * if you use L, R B command before C command (creating a canvas), you will be
@@ -13,10 +15,10 @@ told to create a canvas first
 * If you try to use command (L, R, B) to draw outside the canvas, you will be warned
 
 ## Test cases
+* to run test, use `mvn test`
 * most test cases will be loaded from csv, under `test/resources`
 * escaping is used in different input, such as `\n' and '\\,'
 * specific test case format for different test files (.csv) are listed in below sections
-* to run test, use `mvn test`
 
 ### validateArgumentParam.csv
   * total 4 csv files for validating arguments. Including validation for L command, C command, and B command
